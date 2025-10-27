@@ -1,0 +1,23 @@
+<template>
+	<h1 style="color: blue">Padre deportes</h1>
+	<ul>
+		<li v-for="sport in deportes" :key="sport">
+			<HijoDeporte :nombredeporte="sport" />
+		</li>
+	</ul>
+</template>
+<script>
+	import HijoDeporte from "./HijoDeporte.vue";
+
+	export default {
+		name: "PadreDeportes",
+		components: {
+			HijoDeporte,
+		},
+		data() {
+			return {
+				deportes: ["Curling", "Peonza", "Canicas", "Bolos"],
+			};
+		},
+	};
+</script>
