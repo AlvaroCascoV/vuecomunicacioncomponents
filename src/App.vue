@@ -5,15 +5,16 @@
 	<!-- <SeleccionMultiple /> -->
 	<!-- <SumaCheckbox /> -->
 	<div>
-		<h1 style="color: red">Elemento estatico</h1>
-		<MenuComponent />
+		<!-- <MenuComponent /> -->
+		<MenuTablaMultiplicar />
 		<hr />
 		<router-view />
 	</div>
 </template>
 
 <script>
-	import MenuComponent from "./components/MenuComponent.vue";
+	// import MenuComponent from "./components/MenuComponent.vue";
+	import MenuTablaMultiplicar from "./components/MenuTablaMultiplicar.vue";
 
 	// import SumaCheckbox from "./components/SumaCheckbox.vue";
 	// import PadreDeportes from "./components/PadreDeportes.vue";
@@ -29,7 +30,8 @@
 			// ComicsComponent,
 			// SeleccionMultiple,
 			// SumaCheckbox,
-			MenuComponent,
+			// MenuComponent,
+			MenuTablaMultiplicar,
 		},
 	};
 </script>
